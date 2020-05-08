@@ -1,0 +1,50 @@
+<html>
+
+	<head>
+		    <title>
+			            Prepare For Battle
+				        </title>
+	</head>
+	<body bgcolor="black"></body>
+	<body style = "text-align:center;">
+
+		    <h1 style = "color:green;">
+			            619K Weapon Choices
+				        </h1>
+
+					    <p id = "GFG_UP" style =
+               "font-size: 15px; font-weight: bold; color:white">
+					        </p>
+
+						    <button id = "button" onclick = "GFG_Fun()">
+							            click here
+								        </button>
+
+									    <p id = "GFG_DOWN" style =
+           "font-size: 24px; font-weight: bold; color: green;">
+									      </p>
+
+									          <script>
+											          var up = document.getElementById('GFG_UP');
+        var down = document.getElementById('GFG_DOWN');
+
+        var  primaryWeapon = ["M4A1" , "AK-47" , "M13" , "FR 5.56", "Oden" , "Kilo 141" , "FAL", "FN Scar 17s" , "RAM-7 (Season 1)" , "GRAU 5.56 (Season 2)" , "MP5" , "MP7" ,"AUG" , "P90" , "PP19 Bizon" , "Uzi" , "Striker 45 (Season 2)" , "SA87" , "PKM" , "MG34" , "Holger-26 (Season 1)" , "EBR-14" , "MK2 Carbine" , "Kar98k" , "Crossbow" , "SKS (EBR-14 if not unlocked)" , "AX-50" , "Dragunov" , "HDR" , "Riot Shield" , "NONE (Make Uzi Your Primary and Only use Secondary Listed"];
+
+        var secondaryList = ["50 GS" , "M19" , "X16" , "1911" , "357" , "Renetti" , "M91" , "Combat Knife" , "PILA" , "Strela-P" , "RPG-7" , "JOKR"];
+
+        var  lethals= ["Frag" , "Grenade" , "Claymore" , "Semtex" , "C4" , "Proximity Mine" , "Throwing Knife" , "Thermite" , "Molotov Cocktail"];
+
+        var tactical = ["Flash Grenade" , "Stun Grenade" , "Smoke Grenade" , "Stim" , "Snapshot Grenade" , "Gas Grenade" , "Heartbeat Sensor" , "Decoy Grenade"] ;
+
+        up.innerHTML = "Click on the button to get"
+               + " your loadout.<br><br>";
+
+        function GFG_Fun() {
+		          alert( "Primary: " +  primaryWeapon[Math.floor(Math.random() *  primaryWeapon.length)] + " \n" + "Secondary: " + secondaryList[Math.floor(Math.random() * secondaryList.length)]  + " \n" + "Lethal: "  + lethals[Math.floor(Math.random() * lethals.length)] + " \n" + "Tactical: "  + tactical[Math.floor(Math.random() * tactical.length)]);
+		            // down.innerHTML = arr[Math.floor(Math.random() * arr.length)];
+		        }
+    </script>
+        <IMG SRC="lor.gif">
+	</body>
+
+</html>
