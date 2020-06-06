@@ -8,9 +8,11 @@ services:
 
 before_script:
   - docker info
+  tags: web
 
 build:
   stage: build
   script:
     - docker build -t ajhanna/website .
+  tags: web
    
