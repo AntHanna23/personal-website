@@ -10,7 +10,7 @@ before_script:
   # installing ansible for deployment
   - apt install software-properties-common -y &&  apt-add-repository --yes --update ppa:ansible/ansible && apt install ansible -y
   
- staging: 
+staging: 
    stage: test
    script:
     - docker build -t ajhanna/website .
