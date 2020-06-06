@@ -1,4 +1,4 @@
-image: busybox:latest
+image: ubuntu:18.04
 
 stages:
   - test
