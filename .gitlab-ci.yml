@@ -11,7 +11,6 @@ before_script:
 staging: 
    stage: test
    script:
-    - systemctl start docker
     - docker build -t ajhanna/website .
     - docker run -p 80:80 ajhanna/website 
     - curl localhost:80
