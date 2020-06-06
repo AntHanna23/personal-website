@@ -1,7 +1,7 @@
-image: "busybox:latest"
+image: busybox:latest
 
 stages:
-- test
+  - test
   
 before_script:
     # installing updates and docker for testing container
