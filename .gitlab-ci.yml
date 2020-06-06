@@ -13,7 +13,7 @@ before_script:
 staging: 
    stage: test
    script:
-    - docker build -t ajhanna/website .
-    - docker run -p 80:80 ajhanna/website 
+    - sudo docker build -t ajhanna/website .
+    - sudo docker run -p 80:80 ajhanna/website 
     - curl localhost:80
     - curl localhost:80/Documentation/Stuff
