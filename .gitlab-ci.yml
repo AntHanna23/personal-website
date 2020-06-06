@@ -1,17 +1,19 @@
-image: busybox
+image: "busybox:latest"
 
-variables:
-  DOCKER_TLS_CERTDIR: "/certs"
-
-services:
-  - busybox-dind
-
-before_script:
-  - docker info
-
-build:
-  stage: build
-  script:
-    - docker build -t ajhanna/website .
+stages:
+  - test
   
-   
+before_script:
+    # installing updates and docker for testing container
+  - apt update && apt upgrade -y && apt install docker.io -y 
+  - which curl 
+  # installing ansible for deployment
+  - apt install software-properties-common -y &&  apt-add-repository --yes --update ppa:ansible/ansible && apt install ansible -y
+  
+ staging: 
+   stage: test
+   script:
+    - docker build -t ajhanna/website .
+    - docker run -p 80:80 ajhanna/website 
+    - curl localhost:80
+    - curl localhost:80/Documentation/Stuff
