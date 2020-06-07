@@ -1,6 +1,7 @@
 stages:
   - build
   - test
+  - deploy
   - cleanup
   
 build-web-container: 
@@ -14,6 +15,13 @@ test-containers-available:
     script:    
     - curl --fail localhost:80
     - curl --fail localhost:80/Documentation/
+
+deploy_with_ansible:
+  stage: deploy
+  script:
+   - ansible-playbook /home/anthonyhanna/Projects/ansible/update.yml
+   - ansible-playbook /home/anthonyhanna/Projects/ansible/deploy-website.yml
+  only: master
     
 cleanup:
     stage: cleanup
