@@ -2,8 +2,8 @@ stages:
   - test
   - cleanup
 before_script:
-    # installing updates and docker for testing container
-  - which curl 
+  # updating host OS
+  - sudo pacman -Syu
   # installing ansible for deployment
   - sudo pacman -S ansible
   
