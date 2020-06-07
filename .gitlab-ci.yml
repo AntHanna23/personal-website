@@ -3,10 +3,9 @@ stages:
   - cleanup
 before_script:
     # installing updates and docker for testing container
-  - apt update && apt upgrade -y && apt install docker.io -y 
   - which curl 
   # installing ansible for deployment
-  - apt install software-properties-common -y &&  apt-add-repository --yes --update ppa:ansible/ansible && apt install ansible -y
+  - sudo pacman -S ansible
   
 staging: 
    stage: test
