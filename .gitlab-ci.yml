@@ -12,6 +12,6 @@ staging:
    stage: test
    script:
     - docker build -t ajhanna/website .
-    - docker run -d -p  80:80 ajhanna/website 
+    - docker run -d --name test_container p  80:80 ajhanna/website 
     - curl localhost:80
     - curl localhost:80/Documentation/
