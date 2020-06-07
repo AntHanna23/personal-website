@@ -2,7 +2,7 @@ stages:
   - test
   - cleanup
   
-staging: 
+test-webpage: 
    stage: test
    script:
     - docker build -t ajhanna/website .
@@ -11,7 +11,7 @@ staging:
     - curl localhost:80
     - curl localhost:80/Documentation/sjhdalisjdfasldf
     
-staging:
+cleanup:
     stage: cleanup
     script: 
      - docker stop test_container"$(date +'%d-%m-%Y')"
