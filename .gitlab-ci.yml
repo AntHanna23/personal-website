@@ -14,4 +14,4 @@ staging:
     - docker build -t ajhanna/website .
     - docker run -d -p  80:80 ajhanna/website 
     - curl localhost:80
-    - curl localhost:80/Documentation/Stuff
+    - curl localhost:80/Documentation/
