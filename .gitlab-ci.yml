@@ -9,7 +9,7 @@ staging:
     - docker run -d --name test_container"$(date +'%d-%m-%Y')" -p  80:80 ajhanna/website 
     - tidy -errors -q anthonyhanna.com/*.html
     - curl localhost:80
-    - curl localhost:80/Documentation/
+    - curl localhost:80/Documentation/sjhdalisjdfasldf
     
 staging:
     stage: cleanup
