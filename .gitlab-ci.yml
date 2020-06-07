@@ -1,0 +1,21 @@
+stages:
+  - build
+  - test
+  - cleanup
+  
+build-web-container: 
+   stage: build
+   script:
+    - docker build -t ajhanna/website .
+    - docker run -d --name test_container"$(date +'%d-%m-%Y-%H%M')" -p  80:80 ajhanna/website 
+    
+test-containers-available:
+    stage: test
+    script:    
+    - curl --fail localhost:80
+    - curl --fail localhost:80/Documentation/
+    
+cleanup:
+    stage: cleanup
+    script: 
+     - docker stop test_container"$(date +'%d-%m-%Y-%H%M')"
