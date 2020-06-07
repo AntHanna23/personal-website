@@ -21,7 +21,8 @@ deploy_with_ansible:
   script:
    - ansible-playbook /home/anthonyhanna/Projects/ansible/update.yml
    - ansible-playbook /home/anthonyhanna/Projects/ansible/deploy-website.yml
-  only: master
+  only: 
+   - master
     
 cleanup:
     stage: cleanup
