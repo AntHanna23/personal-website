@@ -6,7 +6,7 @@ test-webpage:
    stage: test
    script:
     - docker build -t ajhanna/website .
-    - docker run -d --name test_container"$(date +'%d-%m-%Y-%T')" -p  80:80 ajhanna/website 
+    - docker run -d --name test_container"$(date +'%d-%m-%Y-%H%M')" -p  80:80 ajhanna/website 
     - tidy -errors -q anthonyhanna.com/*.html
     - curl localhost:80
     - curl localhost:80/Documentation/sjhdalisjdfasldf
@@ -14,4 +14,4 @@ test-webpage:
 cleanup:
     stage: cleanup
     script: 
-     - docker stop test_container"$(date +'%d-%m-%Y-%T')"
+     - docker stop test_container"$(date +'%d-%m-%Y-%H%M')"
