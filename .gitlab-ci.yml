@@ -1,6 +1,6 @@
 stages:
   - test
-  
+  - cleanup
 before_script:
     # installing updates and docker for testing container
   - apt update && apt upgrade -y && apt install docker.io -y 
@@ -15,3 +15,8 @@ staging:
     - docker run -d --name test_container"$(date +'%d-%m-%Y')" -p  80:80 ajhanna/website 
     - curl localhost:80
     - curl localhost:80/Documentation/
+    
+staging:
+    stage: cleanup
+    script: 
+     - docker stop test_container"$(date +'%d-%m-%Y')"
