@@ -28,3 +28,5 @@ cleanup:
     stage: cleanup
     script: 
      - docker stop test_container"$(date +'%d-%m-%Y-%H%M')"
+    rules:
+     - when: always
