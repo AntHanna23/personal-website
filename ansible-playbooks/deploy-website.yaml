@@ -6,7 +6,7 @@
       repo: git@gitlab.anthonyhanna.com:AntHanna23/personal-website.git
       dest: /home/anthonyhanna/website/
       accept_hostkey: yes
-      key_file: /home/anthonyhanna/.ssh/git
+      key_file: /var/lib/gitlab-runner/.ssh/gitlab-runner
       clone: yes
 
   - name: install docker python module to be used to manage containers with ansible
