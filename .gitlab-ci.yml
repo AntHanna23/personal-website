@@ -3,6 +3,9 @@ before_script:
   - whoami
   - ssh-add /var/lib/gitlab-runner/.ssh/gitlab-runner
 
+variables:
+  - ANSIBLE_USER: "anthonyhanna"
+  
 stages:
   - build
   - test
@@ -25,8 +28,8 @@ test-containers-available:
 deploy_with_ansible:
   stage: deploy
   script:
-   - ansible-playbook ./ansible-playbooks/update.yaml 
-   - ansible-playbook ./ansible-playbooks/deploy-website.yaml
+   - ansible-playbook ./ansible-playbooks/update.yaml --user $ANSIBLE_USER
+   - ansible-playbook ./ansible-playbooks/deploy-website.yaml --user $ANSIBLE_USER
 
   only: 
    - master
