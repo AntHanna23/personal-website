@@ -26,8 +26,8 @@ test-containers-available:
 deploy_with_ansible:
   stage: deploy
   script:
-   - ansible-playbook ./ansible-playbooks/update.yaml --user $ANSIBLE_USER
-   - ansible-playbook ./ansible-playbooks/deploy-website.yaml --user $ANSIBLE_USER
+   - ansible-playbook ./ansible-playbooks/update.yaml --user anthonyhanna
+   - ansible-playbook ./ansible-playbooks/deploy-website.yaml --user anthonyhanna
 
   only: 
    - master
