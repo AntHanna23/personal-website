@@ -1,8 +1,13 @@
+before_script:
+  - eval $(ssh-agent -s)
+  - ssh-add /var/lib/gitlab-runner/.ssh/gitlab-runner
+
 stages:
   - build
   - test
   - deploy
   - cleanup
+  
   
 build-web-container: 
    stage: build
@@ -19,7 +24,7 @@ test-containers-available:
 deploy_with_ansible:
   stage: deploy
   script:
-   - ansible-playbook ./ansible-playbooks/update.yaml --private-key="/home/anthonyhanna/.ssh/anthony-key"
+   - ansible-playbook ./ansible-playbooks/update.yaml 
    - ansible-playbook ./ansible-playbooks/deploy-website.yaml
 
   only: 
