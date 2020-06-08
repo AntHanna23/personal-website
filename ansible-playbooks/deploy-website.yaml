@@ -5,7 +5,6 @@
     become: yes
     become_user: gitlab-runner
     git:
-    become_user: git-runner
       repo: git@gitlab.anthonyhanna.com:AntHanna23/personal-website.git
       dest: /home/anthonyhanna/website/
       accept_hostkey: yes
