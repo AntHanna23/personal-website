@@ -19,8 +19,14 @@ test-containers-available:
 deploy_with_ansible:
   stage: deploy
   script:
+<<<<<<< HEAD
    - ansible-playbook ansible-playbooks/update.yml
    - ansible-playbook ansible-playbooks/deploy-website.yml
+=======
+   - cd /home/anthonyhanna/Projects/ansible/playbooks
+   # - ansible-playbook /home/anthonyhanna/Projects/ansible/playbooks/update.yaml 
+#   - ansible-playbook /home/anthonyhanna/Projects/ansible/playbooks/deploy-website.yaml
+>>>>>>> 0aeb68f572457ab9cf746a6dec65ebceb5cd86d0
   only: 
    - master
     
@@ -28,3 +34,5 @@ cleanup:
     stage: cleanup
     script: 
      - docker stop test_container"$(date +'%d-%m-%Y-%H%M')"
+    rules:
+     - when: always
