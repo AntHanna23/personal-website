@@ -35,6 +35,6 @@ deploy_with_ansible:
 cleanup:
     stage: cleanup
     script: 
-     - docker stop test_container"$(date +'%d-%m-%Y-%H%M')"
+     - docker stop $(docker ps -aq)
     rules:
      - when: always
