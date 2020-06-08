@@ -5,7 +5,7 @@
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Ansible</title>
+	<title>Ansible Want Key</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -39,7 +39,7 @@
 
    		<div class="header-content twelve columns">
 
-		      <h1 id="logo-text"><a href="index.html" title="">Allow SSH Authentication </a></h1>
+		      <h1 id="logo-text"><a href="index.html" title="">Ansible.cfg for GIT </a></h1>
 				<p id="intro">I have to write it down</p>
 
 			</div>				     
@@ -66,7 +66,7 @@
 					</header> 
 					
 					<div class="entry-content">
-						<p>Remember when using Ansible to use Git, it does not automatically use the SSH agent on the new machine. You must go the the ansible.cfg and find the SSH configuration block. From here erase the comment from the ssh_args section and append <code>-o forwardAgent=yes</code> to the end of the line. You might also need to add the private key location to the ansible job but this is usually not needed.</p>
+						<p>Remember when using Ansible to use Git, it does not automatically use the SSH agent on the new machine. You must go the the ansible.cfg and find the SSH configuration block. From here erase the comment from the ssh_args section and append <code>-o ForwardAgent=yes</code> to the end of the line. You might also need to add the private key location to the ansible job but this is usually not needed.</p>
 			
 					</div> 
 
