@@ -2,9 +2,9 @@
 - hosts: anthonyhanna.com
   tasks:
   - name: pull repo from git and update
+    become: yes
     become_user: gitlab-runner
     git:
-    become: yes
     become_user: git-runner
       repo: git@gitlab.anthonyhanna.com:AntHanna23/personal-website.git
       dest: /home/anthonyhanna/website/
