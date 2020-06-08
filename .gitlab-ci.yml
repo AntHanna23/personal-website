@@ -19,7 +19,7 @@ test-containers-available:
 deploy_with_ansible:
   stage: deploy
   script:
-   - ansible-playbook ./ansible-playbooks/update.yml --private-key="/home/anthonyhanna/.ssh/anthony-key"
+   - ansible-playbook ./ansible-playbooks/update.yml 
    - ansible-playbook ./ansible-playbooks/deploy-website.yaml
 
   only: 
