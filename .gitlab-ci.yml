@@ -3,8 +3,6 @@ before_script:
   - whoami
   - ssh-add /var/lib/gitlab-runner/.ssh/gitlab-runner
 
-variables:
-  - ANSIBLE_USER: "anthonyhanna"
   
 stages:
   - build
