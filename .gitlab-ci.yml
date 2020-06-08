@@ -15,7 +15,7 @@ build-web-container:
    stage: build
    script:
     - docker build -t ajhanna/website .
-    - docker run -d --name test_container"$(date +'%d-%m-%Y-%H%M')" -p  80:80 ajhanna/website 
+    - docker run -d --rm --name test_container"$(date +'%d-%m-%Y-%H%M')" -p  80:80 ajhanna/website 
     
 test-containers-available:
     stage: test
