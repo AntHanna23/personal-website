@@ -38,7 +38,7 @@
       state: stopped
     with_items:
       - anthony-website
-      - personal-website
+    ignore_errors: yes
 
       
   - name: restart and deploy new container
