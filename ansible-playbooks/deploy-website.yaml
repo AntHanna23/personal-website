@@ -34,8 +34,11 @@
 
   - name: stop all running containers before they are redeployed
     docker_container:
-      name: "{{ result.containers }}"
+      name: "{{ item {{"
       state: stopped
+    with_items:
+      - anthony-website
+      - personal-website
 
       
   - name: restart and deploy new container
