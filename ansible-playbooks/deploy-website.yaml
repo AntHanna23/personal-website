@@ -32,6 +32,11 @@
       tag: latest 
       force_source: yes
 
+  - name: stop all running containers before they are redeployed
+    docker_container:
+      name: "{{ result.containers }}"
+      state: stopped
+
       
   - name: restart and deploy new container
     docker_container:
