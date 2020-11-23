@@ -12,7 +12,7 @@ Pick One
 
 ## GPU
 These are always sold out so don' try that hard to get it
-* [Asus Tuf 3080](https://www.asus.com/us/Graphics-Cards/TUF-RTX3080-10G-GAMING/)
+* [Asus Tuf 3080](https://www.newegg.com/asus-geforce-rtx-3080-tuf-rtx3080-10g-gaming/p/N82E16814126453)
 
 ## Workout Stuff
 * [Ghost Pre Workout](https://www.ghostlifestyle.com/products/ghost-legend-x-sour-patch-kids?variant=28969454665802)
