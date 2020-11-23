@@ -2,6 +2,7 @@
 
 ## CASES
 
+Pick One
 * [Case 1](https://www.corsair.com/us/en/Categories/Products/Cases/Mid-Tower-ATX-Cases/iCUE-220T-RGB-Airflow-Tempered-Glass-Mid-Tower-Smart-Case/p/CC-9011174-WW)
 
 * [Case 2](https://www.corsair.com/us/en/Categories/Products/Cases/Mid-Tower-ATX-Cases/iCUE-4000X-RGB-Tempered-Glass-Mid-Tower-ATX-Case/p/CC-9011205-WW)
@@ -35,5 +36,6 @@ Shorts
 Any nice brown wallet
 
 ## Mouse Pad
+Pick One
 * [Anubis](https://www.amazon.com/AnubisGX-Computer-Waterproof-Extended-Precision/dp/B07ZCN5ZRZ/ref=sr_1_4?dchild=1&gclid=CjwKCAiAtej9BRAvEiwA0UAWXmEl5QeZ6Kafa5CNErxSsjg4LWiOp9kHlblajEwPS1qdBZbUDDTmGhoCPtUQAvD_BwE&hvadid=320744743604&hvdev=c&hvlocphy=9031290&hvnetw=g&hvqmt=e&hvrand=18187570733844780670&hvtargid=kwd-447125411897&hydadcr=24656_9648981&keywords=white+rgb+mouse+pad&qid=1606111727&sr=8-4&tag=googhydr-20)
 * [Razor](https://www.amazon.com/Razer-Goliathus-Extended-Chroma-Gaming/dp/B07SJ97NNF/ref=sr_1_5?dchild=1&gclid=CjwKCAiAtej9BRAvEiwA0UAWXmEl5QeZ6Kafa5CNErxSsjg4LWiOp9kHlblajEwPS1qdBZbUDDTmGhoCPtUQAvD_BwE&hvadid=320744743604&hvdev=c&hvlocphy=9031290&hvnetw=g&hvqmt=e&hvrand=18187570733844780670&hvtargid=kwd-447125411897&hydadcr=24656_9648981&keywords=white+rgb+mouse+pad&qid=1606111783&sr=8-5&tag=googhydr-20)
