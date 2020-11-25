@@ -9,11 +9,12 @@ Pick One
 
 I think i want one of these
 
-* [Case 3] (https://www.thermaltake.com/core-p3-tempered-glass-snow-edition.html)
+* [Case 3](https://www.thermaltake.com/core-p3-tempered-glass-snow-edition.html)
 
 ## Thing to go under desk
 One of these but not this expensive
-[Desk Thing] (https://www.lauradavidsondirect.com/products/stockpile-file-cabinet-white?gclid=CjwKCAiAnvj9BRA4EiwAuUMDf61weaxwUJs8anrpJhFZqeRTJr4jXk3mL9lKP0P4g_LhvrUZhOOibBoCoYcQAvD_BwE)
+
+[Desk Thing](https://www.lauradavidsondirect.com/products/stockpile-file-cabinet-white?gclid=CjwKCAiAnvj9BRA4EiwAuUMDf61weaxwUJs8anrpJhFZqeRTJr4jXk3mL9lKP0P4g_LhvrUZhOOibBoCoYcQAvD_BwE)
 
 ## CPU Cooler
 * [NZXT Cooler](https://www.nzxt.com/products/kraken-z63)
