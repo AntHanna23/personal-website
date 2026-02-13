@@ -1,0 +1,73 @@
+name: Milestone
+description: Strategic initiative containing multiple related issues
+title: "[Milestone] "
+body:
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What strategic goal does this epic accomplish?
+      placeholder: Describe the business or technical objective.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Epic Acceptance Criteria
+      description: What must be true for this epic to be considered complete?
+      placeholder: Define measurable completion conditions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Success Metrics
+      description: How will success be measured (performance, reliability, security, UX, etc.)?
+      placeholder: Provide measurable metrics if possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: In Scope
+      description: What work is included in this epic?
+    validations:
+      required: true
+
+  - type: textarea
+    id: non-scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly not included?
+    validations:
+      required: false
+
+  - type: textarea
+    id: decomposition
+    attributes:
+      label: Decomposition Plan
+      description: How will this epic be broken into child issues?
+      placeholder: List anticipated work streams or components.
+    validations:
+      required: true
+
+  - type: textarea
+    id: poc
+    attributes:
+      label: Proof of Concept (Optional)
+      description: Is a POC required before full implementation? If so, describe scope and validation criteria.
+      placeholder: Optional experimental or validation work before full rollout.
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and Dependencies
+      description: Known technical risks, deployment risks, or dependencies.
+    validations:
+      required: true
